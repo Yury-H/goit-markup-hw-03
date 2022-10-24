@@ -1,15 +1,8 @@
-/* primary-backgraund-color: #F5F5F5;
-secondary-backgraund-color: #2F303A;
-title-color: #212121;
-text-color: #757575;
-accent color: #2196F3; */
-
 /*general styles*/
 
 :root {
-  --primary-backgraund-color: #f5f5f5;
+  --primary-backgraund-color: #ffffff;
   --secondary-backgraund-color: #2f303a;
-  --third-color: #ffffff;
   --title-color: #212121;
   --text-color: #757575;
   --accent-color: #2196f3;
@@ -22,16 +15,49 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
 a {
   text-decoration: none;
 }
 
 button {
+  margin: 0;
+  padding: 0;
   font-family: inherit;
   cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /*outline: red solid;*/
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -48,31 +74,49 @@ button {
 }
 
 /*header*/
+
 .header {
-  background-color: var(--third-color);
+  background-color: var(--primary-backgraund-color);
 }
 
-.header-logo,
-.footer-logo {
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 93px;
 }
 
 .header-logo-studio {
   color: #000000;
 }
 
-.link-item {
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.header-nav-item {
+  display: block;
   color: var(--title-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-.link-item:hover,
-.link-item:focus {
+.header-nav-item:hover,
+.header-nav-item:focus {
   color: var(--accent-color);
 }
 
@@ -80,7 +124,19 @@ button {
   color: var(--accent-color);
 }
 
+.header-right-side {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
 .header-email-tel {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -95,9 +151,15 @@ button {
 
 .hero {
   background-color: var(--secondary-backgraund-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
 .hero-title {
-  color: var(--third-color);
+  width: 696px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  color: var(--primary-backgraund-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -107,8 +169,12 @@ button {
 }
 
 .hero-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 32px;
   background-color: var(--accent-color);
-  color: var(--third-color);
+  color: var(--primary-backgraund-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -122,6 +188,12 @@ button {
 }
 
 /*features*/
+
+.features-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
 
 .features-title {
   color: var(--title-color);
@@ -139,8 +211,13 @@ button {
 
 /* specialisation*/
 
-.spec-title,
-.team-title {
+.spec-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.spec-title {
+  padding-bottom: 50px;
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
@@ -148,15 +225,43 @@ button {
   text-align: center;
 }
 
-/*our team*/
-
-.team {
-  background-color: #f5f4fa;
-  text-align: center;
+.spec-images {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
 
+/*our team*/
+
+.team-container {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.team-name-position {
+  background-color: var(--primary-backgraund-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  padding: 30px 0;
+}
 .team-name {
-  background-color: var(--third-color);
+  /*background-color: var(--primary-backgraund-color);*/
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
@@ -164,7 +269,7 @@ button {
 }
 
 .team-position {
-  background-color: var(--third-color);
+  /*background-color: var(--primary-backgraund-color);*/
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
@@ -176,19 +281,35 @@ button {
 .footer {
   background-color: var(--secondary-backgraund-color);
 }
+
+.footer-container {
+  padding: 60px 15px;
+}
+
+.footer-logo {
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
 .footer-logo-studio {
-  color: var(--third-color);
+  color: var(--primary-backgraund-color);
 }
 
 .address {
   font-style: normal;
+  text-align: left;
+  margin-top: 20px;
 }
 
 .footer-address {
-  color: var(--third-color);
+  color: var(--primary-backgraund-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-bottom: 9px;
 }
 
 .footer-address:hover,
@@ -206,9 +327,24 @@ button {
   color: var(--accent-color);
 }
 
+.footer-email {
+  margin-bottom: 9px;
+}
+
 /*portfolio*/
 
+.portfolio-filter {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .portfolio-filter-item {
+  padding: 6px 25px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
   color: var(--title-color);
   font-family: inherit;
   font-weight: 500;
@@ -219,8 +355,27 @@ button {
 
 .portfolio-filter-item:hover,
 .portfolio-filter-item:focus {
-  color: var(--third-color);
+  color: var(--primary-backgraund-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-item {
+}
+.portfolio-item-description {
+  background-color: var(--primary-backgraund-color);
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  text-align: start;
+  padding: 20px 24px;
 }
 
 .portfolio-item-title {
