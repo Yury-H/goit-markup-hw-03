@@ -82,6 +82,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header-logo {
@@ -345,6 +346,7 @@ img {
   text-decoration: none;
   border: none;
   box-shadow: none;
+  background-color: #ffffff;
   color: var(--title-color);
   font-family: inherit;
   font-weight: 500;
@@ -368,12 +370,12 @@ img {
   gap: 30px;
 }
 
-.portfolio-item {
-}
 .portfolio-item-description {
   background-color: var(--primary-backgraund-color);
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
   text-align: start;
   padding: 20px 24px;
 }
