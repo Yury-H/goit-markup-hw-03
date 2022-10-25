@@ -304,6 +304,7 @@ img {
 }
 
 .footer-logo {
+  display: block;
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -322,6 +323,7 @@ img {
 }
 
 .footer-address {
+  display: block;
   color: var(--primary-backgraund-color);
   font-weight: 400;
   font-size: 14px;
@@ -345,6 +347,7 @@ img {
 }
 
 .footer-email {
+  display: block;
   margin-bottom: 9px;
 }
 
