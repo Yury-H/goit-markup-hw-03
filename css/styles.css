@@ -105,7 +105,6 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  /*gap: 50px;*/
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -171,7 +170,7 @@ img {
 .hero-title {
   width: 696px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   color: var(--primary-backgraund-color);
   font-weight: 900;
   font-size: 44px;
@@ -271,7 +270,7 @@ img {
   justify-content: center;
 }
 
-.team-name-position {
+.team-member-description {
   background-color: var(--primary-backgraund-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -279,7 +278,7 @@ img {
   text-align: center;
   padding: 30px 0;
 }
-.team-name {
+.team-member-name {
   /*background-color: var(--primary-backgraund-color);*/
   color: var(--title-color);
   font-weight: 500;
@@ -288,7 +287,7 @@ img {
   margin-bottom: 10px;
 }
 
-.team-position {
+.team-member-position {
   /*background-color: var(--primary-backgraund-color);*/
   color: var(--text-color);
   font-weight: 400;
@@ -300,7 +299,7 @@ img {
 
 .footer {
   background-color: var(--secondary-backgraund-color);
-  padding: 60px 15px;
+  padding: 60px 0;
 }
 
 .footer-logo {
